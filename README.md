@@ -1,6 +1,6 @@
 ### WARNING: For advanced USERS!
 -------------------------------------------------------------------------
-##### Install OpenVPN-API
+### Install OpenVPN-API
 
 1. enable PHP module 
 ```bash
