@@ -1,7 +1,8 @@
 #!/bin/bash
 # @V.Varbanovski @nu11secur1ty
 #
-terminator="$(sudo php -S 192.168.100.49:1234 &)"
+check1="$(ifconfig -a | awk ' /(inet)(.*)broadcast/ {print $2}')"
+terminator="$(sudo php -S $check1:1234 &)"
 	sleep 3
 echo "Content-type: text/html"
 echo ""
