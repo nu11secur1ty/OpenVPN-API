@@ -1,0 +1,17 @@
+#!/bin/bash
+DATE="$(date)"
+#ROOTUSER="$(sudo whoami)"
+#USER="$(whoami)"
+exe="$(sudo bash vpn.sh)"
+	sleep 7
+check="$(sudo curl ifconfig.co)"
+country="$(sudo curl ifconfig.co/country)"
+echo "Content-type: text/html"
+echo ""
+echo "<html><head><title>ChangeIP</title></head><body>"
+echo "Today is $DATE <br>"
+#echo "I am a $ROOTUSER <br>"
+#echo "I am a $USER <br>"
+echo "$exe <br>"
+echo "Now after changing your IP, he is: $check <br>"
+echo "Your country is: $country <br>"

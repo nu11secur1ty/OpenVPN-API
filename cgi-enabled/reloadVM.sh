@@ -1,0 +1,12 @@
+#!/bin/bash
+DATE="$(date)"
+ROOTUSER="$(sudo whoami)"
+USER="$(whoami)"
+exe="$(sudo telinit 6)"
+echo "Content-type: text/html"
+echo ""
+echo "<html><head><title>Test</title></head><body>"
+echo "Today is $DATE <br>"
+echo "I am a $ROOTUSER <br>"
+echo "I am a $USER <br>"
+echo "$exe <br>"
