@@ -14,6 +14,9 @@ a2enmod cgi
    
 4. Download content into cgi-enabled folder in
 
+- For help:
+- [Link](https://www.server-world.info/en/note?os=Ubuntu_21.04&p=httpd&f=5)
+
 - For UBUNTU
 ```bash
 /var/www/html/cgi-enabled
